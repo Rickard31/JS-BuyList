@@ -1,3 +1,124 @@
-h1 {
-    color: red;
+html{
+    background-color: #DADADA;
+}
+
+.main{
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 10%;
+}
+
+.rightColumn{
+    width: 35%;
+    line-height:1.4285em;
+    float:right;
+    background-color: white;
+    border-radius:0.5rem;
+}
+
+h3{
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding-left:3%;
+}
+
+.rightColumnLine{
+    padding:2%;
+    border-top: 1px solid black;
+}
+
+.rightColumnElement{
+    background-color: #E8E8E8;
+    display: inline-block;
+    padding: 1%;
+}
+
+.rightColumnElementName{
+    width:90%;
+    font-size: 0.8rem;
+}
+
+.rightColumnElementAmount{
+    width:5%;
+    font-size:0.8rem;
+    background-color: orange;
+    color: white;
+    border-radius: 500rem;
+    text-align: center;
+}
+
+.leftColumn{
+    width:60%;
+    line-height:1.4285em;
+    background-color: white;
+    border-radius:0.5rem;
+}
+
+.upperLeftLine{
+    padding: 10px;
+    width:auto;
+    position:relative;
+    text-align: center;
+}
+
+.newItemInput{
+    width:85%;
+    padding-right:0px;
+}
+
+.addItemButton{
+    padding-left:0px;
+    background-color: blue;
+    color:white;
+    text-align: center;
+}
+
+.otherLeftLines{
+    padding:2%;
+    border-top: 1px solid black;
+}
+
+.itemName{
+    width: 25%;
+    padding:0%;
+    display: inline-block;
+}
+
+.itemAmountChange{
+    width: 35.5%;
+    padding:0%;
+    display: inline-block;
+    text-align: center;
+}
+
+.reduceItemAmountButton{
+    background-color:red;
+    border-radius: 100%;
+    color: white;
+}
+
+.itemAmountCounter{
+    background-color: #E8E8E8;
+}
+
+.increaseItemAmountButton{
+    color:white;
+    background-color:green;
+    border-radius: 100%;
+}
+
+.itemFinal{
+    width:35.5%;
+    padding:0%;
+    display: inline-block;
+    text-align: right;
+}
+
+.boughtButton{
+    background-color: #E8E8E8;
+}
+
+.removeButton{
+    background-color: red;
+    color:white;
 }
