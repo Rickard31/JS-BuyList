@@ -1,124 +1,179 @@
-html{
+html {
     background-color: #DADADA;
+    box-sizing: border-box;
+    font-size: 15pt;
 }
 
-.main{
+h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding-left: 3%;
+}
+
+.main {
     margin-left: 15%;
     margin-right: 15%;
     margin-top: 10%;
 }
 
-.rightColumn{
+.rightColumn {
     width: 35%;
-    line-height:1.4285em;
-    float:right;
+    line-height: 1.4285em;
+    float: right;
     background-color: white;
-    border-radius:0.5rem;
+    border-radius: 0.5rem;
 }
 
-h3{
-    font-size: 1.1rem;
-    font-weight: 700;
-    padding-left:3%;
-}
-
-.rightColumnLine{
-    padding:2%;
+.rightColumnLine {
+    padding: 2%;
     border-top: 1px solid black;
 }
 
-.rightColumnElement{
+.rightColumnElement {
     background-color: #E8E8E8;
     display: inline-block;
     padding: 1%;
 }
 
-.rightColumnElementName{
-    width:90%;
+.rightColumnElementName {
+    width: 90%;
     font-size: 0.8rem;
 }
 
-.rightColumnElementAmount{
-    width:5%;
-    font-size:0.8rem;
+.rightColumnElementAmount {
+    width: 5%;
+    font-size: 0.8rem;
     background-color: orange;
     color: white;
     border-radius: 500rem;
     text-align: center;
 }
 
-.leftColumn{
-    width:60%;
-    line-height:1.4285em;
+.leftColumn {
+    width: 60%;
+    line-height: 1.4285em;
     background-color: white;
-    border-radius:0.5rem;
+    border-radius: 0.5rem;
 }
 
-.upperLeftLine{
+.upperLeftLine {
     padding: 10px;
-    width:auto;
-    position:relative;
+    width: auto;
+    position: relative;
     text-align: center;
 }
 
-.newItemInput{
-    width:85%;
-    padding-right:0px;
+.newItemInput {
+    width: 85%;
+    padding-right: 0px;
 }
 
-.addItemButton{
-    padding-left:0px;
+.addItemButton {
+    padding-left: 0px;
     background-color: blue;
-    color:white;
+    color: white;
     text-align: center;
 }
 
-.otherLeftLines{
-    padding:2%;
+.otherLeftLines {
+    padding: 2%;
     border-top: 1px solid black;
 }
 
-.itemName{
+.itemName {
     width: 25%;
-    padding:0%;
+    padding: 0%;
     display: inline-block;
 }
 
-.itemAmountChange{
+.itemAmountChange {
     width: 35.5%;
-    padding:0%;
+    padding: 0%;
     display: inline-block;
     text-align: center;
 }
 
-.reduceItemAmountButton{
-    background-color:red;
+.reduceItemAmountButton {
+    background-color: red;
     border-radius: 100%;
     color: white;
 }
 
-.itemAmountCounter{
+.itemAmountCounter {
     background-color: #E8E8E8;
 }
 
-.increaseItemAmountButton{
-    color:white;
-    background-color:green;
+.increaseItemAmountButton {
+    color: white;
+    background-color: green;
     border-radius: 100%;
 }
 
-.itemFinal{
-    width:35.5%;
-    padding:0%;
+.itemFinal {
+    width: 35.5%;
+    padding: 0%;
     display: inline-block;
     text-align: right;
 }
 
-.boughtButton{
+.boughtButton {
     background-color: #E8E8E8;
 }
 
-.removeButton{
+.removeButton {
     background-color: red;
-    color:white;
+    color: white;
 }
+
+.badge {
+    width: 150px;
+    height: 90px;
+    background-color: darkviolet;
+    color: white;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding-top: 10px;
+    position: fixed;
+    bottom: -50px;
+    left: 30px;
+    transition: all 1.5s ease;
+}
+
+.badge::before {
+    content: "Buy List";
+    font-weight: 700;
+}
+
+.badge:hover {
+    background-color: blue;
+    bottom: 0;
+}
+
+@media print {
+
+    .badge {
+        bottom: 0px;
+        background-color: white;
+        color: black;
+        border: 1px solid darkviolet;
+        height: 60px;
+        padding-top:5px;
+    }
+
+    .badge::before {
+        content: "";
+    }
+
+}
+@media(max-width: 400px){
+    .leftColumn{
+        width:100%;
+
+    }
+
+    .rightColumn{
+        width:100%;
+    }
+}
+
