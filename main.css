@@ -1,6 +1,5 @@
 html {
     background-color: #DADADA;
-    box-sizing: border-box;
     font-size: 15pt;
 }
 
@@ -11,8 +10,8 @@ h3 {
 }
 
 .main {
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-top: 10%;
 }
 
@@ -50,8 +49,9 @@ h3 {
 }
 
 .leftColumn {
-    width: 60%;
+    width: 63%;
     line-height: 1.4285em;
+    float: left;
     background-color: white;
     border-radius: 0.5rem;
 }
@@ -97,6 +97,10 @@ h3 {
     background-color: red;
     border-radius: 100%;
     color: white;
+}
+
+.reduceItemAmountButton:hover {
+
 }
 
 .itemAmountCounter {
@@ -148,6 +152,7 @@ h3 {
 .badge:hover {
     background-color: blue;
     bottom: 0;
+    transition: all 1.5s ease;
 }
 
 @media print {
@@ -158,7 +163,7 @@ h3 {
         color: black;
         border: 1px solid darkviolet;
         height: 60px;
-        padding-top:5px;
+        padding-top: 5px;
     }
 
     .badge::before {
@@ -166,14 +171,16 @@ h3 {
     }
 
 }
-@media(max-width: 400px){
-    .leftColumn{
-        width:100%;
 
+@media (max-width: 600px) {
+    .leftColumn {
+        width: 100%;
+        margin-bottom: 20px;
     }
 
-    .rightColumn{
-        width:100%;
+    .rightColumn {
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
 
