@@ -1,14 +1,111 @@
 <!DOCTYPE html>
-<html>
-<head lang="uk">
+<html lang="uk">
+
+<head>
     <meta charset="UTF-8">
-    <title>My Page</title>
-
-
-    <link rel="stylesheet" type="text/css" href="main.css" />
+    <title>Marchenko HW1 NIT</title>
+    <link rel="stylesheet" type="text/css" href="main.css"/>
 </head>
 <body>
-<h1>Hello World</h1>
-<p>Hello Git</p>
+<div class="main">
+    <!--Left Column-->
+    <div class="leftColumn">
+        <div class="upperLeftLine">
+            <input type="text" placeholder="Назва товару" class="newItemInput"/>
+            <button type="button" class="addItemButton">Додати</button>
+        </div>
+        <div class=otherLeftLines>
+            <span class="itemName">
+                Item Name
+            </span>
+            <div class="itemAmountChange">
+                <button type="button" class="reduceItemAmountButton tooltip" data-tooltip="Reduce by 1">-</button>
+                <span class="itemAmountCounter">1</span>
+                <button type="button" class="increaseItemAmountButton tooltip" data-tooltip="Increase by 1">+</button>
+            </div>
+            <div class="itemFinal">
+                <button type="button" class="boughtButton">Куплено</button>
+                <button type="button" class="removeButton tooltip" data-tooltip="Remove from List">X</button>
+            </div>
+        </div>
+        <div class=otherLeftLines>
+            <span class="itemName">
+                Item Name
+            </span>
+            <div class="itemAmountChange">
+                <button type="button" class="reduceItemAmountButton tooltip" data-tooltip="Reduce by 1">-</button>
+                <span class="itemAmountCounter">1</span>
+                <button type="button" class="increaseItemAmountButton tooltip" data-tooltip="Increase by 1">+</button>
+            </div>
+            <div class="itemFinal">
+                <button type="button" class="boughtButton">Куплено</button>
+                <button type="button" class="removeButton tooltip" data-tooltip="Remove from List">X</button>
+            </div>
+        </div>
+        <div class=otherLeftLines>
+            <span class="itemName">
+                Item Name
+            </span>
+            <div class="itemAmountChange">
+                <button type="button" class="reduceItemAmountButton tooltip" data-tooltip="Reduce by 1">-</button>
+                <span class="itemAmountCounter">1</span>
+                <button type="button" class="increaseItemAmountButton tooltip" data-tooltip="Increase by 1">+</button>
+            </div>
+            <div class="itemFinal">
+                <button type="button" class="boughtButton">Куплено</button>
+                <button type="button" class="removeButton tooltip" data-tooltip="Remove from List">X</button>
+            </div>
+        </div>
+    </div>
+    <!--Right Column-->
+    <div class="rightColumn">
+        <h3>Залишилося</h3>
+        <div class="rightColumnLine">
+            <div class="rightColumnElement">
+                <span class="rightColumnElementName">
+                    Item Name
+                </span>
+                <span class="rightColumnElementAmount">
+                    1
+                </span>
+            </div>
+            <div class="rightColumnElement">
+                <span class="rightColumnElementName">
+                    Second Item Name
+                </span>
+                <span class="rightColumnElementAmount">
+                    12
+                </span>
+            </div>
+            <div class="rightColumnElement">
+                <span class="rightColumnElementName">
+                    Item Name
+                </span>
+                <span class="rightColumnElementAmount">
+                    1
+                </span>
+            </div>
+        </div>
+        <div class="rightColumnLine">
+            <h3>Куплено</h3>
+        </div>
+        <div class="rightColumnLine">
+            <div class="rightColumnElement">
+                <span class="rightColumnElementName">
+                    Bought Item
+                </span>
+                <span class="rightColumnElementAmount">
+                    34
+                </span>
+            </div>
+        </div>
+    </div>
+    <!--Badge-->
+    <div class="badge">
+        <span class="buy-list-label">Buy List</span>
+        <p style="font-size: 0.8rem;">Created by:<br>
+            <span>Vitaliy Marchenko</span></p>
+    </div>
+</div>
 </body>
 </html>

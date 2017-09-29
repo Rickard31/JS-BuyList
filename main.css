@@ -1,3 +1,220 @@
-h1 {
-    color: red;
+html {
+    background-color: #DADADA;
+    font-family: cursive;
 }
+
+h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding-left: 3%;
+}
+
+button {
+    border: 0;
+}
+
+.main {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+}
+
+.rightColumn {
+    width: 35%;
+    line-height: 1.4285em;
+    float: right;
+    background-color: white;
+    border-radius: 0.5rem;
+}
+
+.rightColumnLine {
+    padding: 2%;
+    border-top: 1px solid black;
+}
+
+.rightColumnElement {
+    background-color: #E8E8E8;
+    display: inline-block;
+    padding: 1%;
+    font-size: 0.8rem;
+    margin: 3px;
+}
+
+.rightColumnElementAmount {
+    background-color: orange;
+    color: white;
+    border-radius: 500%;
+    display: inline-block;
+    text-align: center;
+    min-width: 2em;
+    min-height: 2em;
+}
+
+.leftColumn {
+    width: 63%;
+    line-height: 1.4285em;
+    float: left;
+    background-color: white;
+    border-radius: 0.5rem;
+}
+
+.upperLeftLine {
+    padding: 10px;
+    width: auto;
+    position: relative;
+    text-align: center;
+}
+
+.newItemInput {
+    width: 85%;
+    padding-right: 0px;
+}
+
+.addItemButton {
+    padding-left: 0px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+
+.otherLeftLines {
+    padding: 2%;
+    border-top: 1px solid black;
+}
+
+.itemName {
+    width: 25%;
+    padding: 0%;
+    display: inline-block;
+}
+
+.itemAmountChange {
+    width: 35.5%;
+    padding: 0%;
+    display: inline-block;
+    text-align: center;
+    font-weight: 700;
+}
+
+.reduceItemAmountButton {
+    background-color: red;
+    font-size: 1.5rem;
+    border-radius: 100%;
+    color: white;
+    width: 2rem;
+}
+
+.itemAmountCounter {
+    background-color: #E8E8E8;
+    text-align: center;
+    padding: 10px;
+}
+
+.increaseItemAmountButton {
+    color: white;
+    font-size: 1.5rem;
+    background-color: green;
+    border-radius: 100%;
+    width: 2rem;
+
+}
+
+.itemFinal {
+    width: 35.5%;
+    padding: 0%;
+    display: inline-block;
+    text-align: right;
+}
+
+.boughtButton {
+    background-color: #E8E8E8;
+}
+
+.removeButton {
+    background-color: red;
+    color: white;
+}
+
+.tooltip::after {
+    background-color: darkviolet;
+    color: transparent;
+    border-radius: 2px;
+    content: attr(data-tooltip);
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-align: center;
+    margin-left: -50px;
+    margin-top: -10px;
+    padding: 3px;
+    visibility: hidden;
+    height: 0rem;
+    transition: all 1s ease;
+    position: absolute;
+}
+
+.tooltip:hover::after {
+    visibility: visible;
+    margin-top: -25px;
+    height: 1rem;
+    color: white;
+}
+
+.badge {
+    width: 150px;
+    height: 90px;
+    background-color: darkviolet;
+    color: white;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding-top: 10px;
+    position: fixed;
+    bottom: -50px;
+    left: 30px;
+    transition: background-color 1.5s ease, bottom 1.5s ease;
+}
+
+.badge:hover {
+    background-color: blue;
+    bottom: 0;
+}
+
+@media print {
+
+    .badge {
+        bottom: 0px;
+        background-color: white;
+        color: black;
+        border: 1px solid darkviolet;
+        height: 60px;
+        padding-top: 5px;
+    }
+
+    .badge::before {
+        content: "";
+    }
+
+    .buy-list-label {
+        display: none;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .main {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .leftColumn {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .rightColumn {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
