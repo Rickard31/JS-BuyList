@@ -61,7 +61,6 @@ button {
 .upperLeftLine {
     padding: 10px;
     width: auto;
-    position: relative;
     text-align: center;
 }
 
@@ -71,10 +70,10 @@ button {
 }
 
 .addItemButton {
-    padding-left: 0px;
     background-color: blue;
     color: white;
     text-align: center;
+    line-height: 1.5em;
 }
 
 .otherLeftLines {
