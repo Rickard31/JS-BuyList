@@ -1,6 +1,6 @@
 html {
     background-color: #DADADA;
-    font-family: cursive;
+    font-family: "Helvetica";
 }
 
 h3 {
@@ -35,9 +35,12 @@ button {
 .rightColumnElement {
     background-color: #E8E8E8;
     display: inline-block;
-    padding: 1%;
+    box-sizing: border-box;
+    padding: 3px;
     font-size: 0.8rem;
-    margin: 3px;
+    margin: 1px;
+    margin-right: 0px;
+    border-radius: 3px;
 }
 
 .rightColumnElementAmount {
@@ -79,12 +82,20 @@ button {
 .otherLeftLines {
     padding: 2%;
     border-top: 1px solid black;
+    box-sizing: border-box;
 }
 
 .itemName {
     width: 25%;
     padding: 0%;
     display: inline-block;
+}
+
+.hidden-input {
+    width: 25%;
+    display: none;
+    text-align: left;
+    padding: 0px;
 }
 
 .itemAmountChange {
@@ -101,6 +112,7 @@ button {
     border-radius: 100%;
     color: white;
     width: 2rem;
+    opacity: 0.5;
 }
 
 .itemAmountCounter {
@@ -127,6 +139,15 @@ button {
 
 .boughtButton {
     background-color: #E8E8E8;
+    padding: 6px;
+    border-radius: 3px;
+}
+
+.unbuy-button {
+    background-color: #E8E8E8;
+    display: none;
+    padding: 6px;
+    border-radius: 3px;
 }
 
 .removeButton {
@@ -143,12 +164,14 @@ button {
     font-size: 0.8rem;
     text-align: center;
     margin-left: -50px;
+    min-width: 100px;
     margin-top: -10px;
     padding: 3px;
     visibility: hidden;
     height: 0rem;
     transition: all 1s ease;
     position: absolute;
+    opacity: 0;
 }
 
 .tooltip:hover::after {
@@ -156,6 +179,7 @@ button {
     margin-top: -25px;
     height: 1rem;
     color: white;
+    opacity: 1;
 }
 
 .badge {
@@ -168,7 +192,7 @@ button {
     border-top-right-radius: 5px;
     padding-top: 10px;
     position: fixed;
-    bottom: -50px;
+    bottom: -55px;
     left: 30px;
     transition: background-color 1.5s ease, bottom 1.5s ease;
 }
@@ -193,7 +217,7 @@ button {
         content: "";
     }
 
-    .buy-list-label {
+    .hide-for-print {
         display: none;
     }
 
@@ -215,4 +239,8 @@ button {
         width: 100%;
         margin-bottom: 20px;
     }
+}
+
+.hidden{
+    display: none;
 }
