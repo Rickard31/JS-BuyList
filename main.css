@@ -51,6 +51,7 @@ button {
     text-align: center;
     min-width: 2em;
     min-height: 2em;
+    text-decoration: inherit;
 }
 
 .leftColumn {

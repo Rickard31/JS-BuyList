@@ -19,7 +19,7 @@
             <span class="itemName">Помідори</span>
             <input class="hidden-input" type="text">
             <div class="itemAmountChange">
-                <button type="button" class="reduceItemAmountButton tooltip" data-tooltip="Reduce by 1" disabled>-
+                <button type="button" class="reduceItemAmountButton" data-tooltip="Reduce by 1" disabled>-
                 </button>
                 <span class="itemAmountCounter">1</span>
                 <button type="button" class="increaseItemAmountButton tooltip" data-tooltip="Increase by 1">+</button>
@@ -35,7 +35,7 @@
             <div class="itemName">Огірки</div>
             <input class="hidden-input" type="text">
             <div class="itemAmountChange">
-                <button type="button" class="reduceItemAmountButton tooltip" data-tooltip="Reduce by 1" disabled>-
+                <button type="button" class="reduceItemAmountButton" data-tooltip="Reduce by 1" disabled>-
                 </button>
                 <span class="itemAmountCounter">1</span>
                 <button type="button" class="increaseItemAmountButton tooltip" data-tooltip="Increase by 1">+</button>
@@ -51,7 +51,7 @@
             <div class="itemName">Капуста</div>
             <input class="hidden-input" type="text">
             <div class="itemAmountChange">
-                <button type="button" class="reduceItemAmountButton tooltip" data-tooltip="Reduce by 1" disabled>-
+                <button type="button" class="reduceItemAmountButton" data-tooltip="Reduce by 1" disabled>-
                 </button>
                 <span class="itemAmountCounter">1</span>
                 <button type="button" class="increaseItemAmountButton tooltip" data-tooltip="Increase by 1">+</button>
@@ -105,27 +105,31 @@
     </div>
 
     <!--Templates-->
-    <div class="hidden otherLeftLines" id="row-template">
-        <span class="itemName"></span>
-        <input class="hidden-input" type="text">
-        <div class="itemAmountChange">
-            <button type="button" class="reduceItemAmountButton tooltip" data-tooltip="Reduce by 1" disabled>-
-            </button>
-            <span class="itemAmountCounter">1</span>
-            <button type="button" class="increaseItemAmountButton tooltip" data-tooltip="Increase by 1">+</button>
-        </div>
-        <div class="itemFinal">
-            <button type="button" class="boughtButton tooltip" data-tooltip="Mark item as bought">Куплено</button>
-            <button type="button" class="unbuy-button tooltip" data-tooltip="Mark item as NOT bought">Не куплено
-            </button>
-            <button type="button" class="removeButton tooltip" data-tooltip="Remove from List">X</button>
+    <div class="hidden" id="row-template">
+        <div class="otherLeftLines">
+            <span class="itemName"></span>
+            <input class="hidden-input" type="text">
+            <div class="itemAmountChange">
+                <button type="button" class="reduceItemAmountButton tooltip" data-tooltip="Reduce by 1" disabled>-
+                </button>
+                <span class="itemAmountCounter">1</span>
+                <button type="button" class="increaseItemAmountButton tooltip" data-tooltip="Increase by 1">+</button>
+            </div>
+            <div class="itemFinal">
+                <button type="button" class="boughtButton tooltip" data-tooltip="Mark item as bought">Куплено</button>
+                <button type="button" class="unbuy-button tooltip" data-tooltip="Mark item as NOT bought">Не куплено
+                </button>
+                <button type="button" class="removeButton tooltip" data-tooltip="Remove from List">X</button>
+            </div>
         </div>
     </div>
-    <div class="rightColumnElement hidden" id="element-template">
-        <span class="rightColumnElementName"></span>
-        <span class="rightColumnElementAmount">
+    <div class="hidden" id="element-template">
+        <div class="rightColumnElement">
+            <span class="rightColumnElementName"></span>
+            <span class="rightColumnElementAmount">
                     1
                 </span>
+        </div>
     </div>
 
 </div>
