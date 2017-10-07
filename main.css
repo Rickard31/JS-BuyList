@@ -134,17 +134,21 @@ button {
 .itemFinal {
     width: 35.5%;
     padding: 0%;
+    line-height: 100%;
+
     display: inline-block;
     text-align: right;
 }
 
 .boughtButton {
+    vertical-align: middle;
     background-color: #E8E8E8;
     padding: 6px;
     border-radius: 3px;
 }
 
 .unbuy-button {
+    vertical-align: middle;
     background-color: #E8E8E8;
     display: none;
     padding: 6px;
@@ -152,8 +156,10 @@ button {
 }
 
 .removeButton {
-    background-color: red;
+    background-color: darkred;
+    font-size: 1.5rem;
     color: white;
+    border-radius: 5px;
 }
 
 .tooltip::after {
@@ -164,7 +170,7 @@ button {
     font-weight: 700;
     font-size: 0.8rem;
     text-align: center;
-    margin-left: -50px;
+    margin-left: -55px;
     min-width: 100px;
     margin-top: -10px;
     padding: 3px;
