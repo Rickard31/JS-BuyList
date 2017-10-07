@@ -6,62 +6,15 @@
     <title>Marchenko NIT</title>
     <link rel="stylesheet" type="text/css" href="main.css"/>
 </head>
-<body>
+
+<body charset="UTF-8">
 <div class="main">
     <!--Left Column-->
     <div class="leftColumn">
         <div class="upperLeftLine">
-            <input type="text" id="new-item-name" placeholder="Назва товару" class="newItemInput">
+            <input type="text" id="new-item-name" placeholder="Назва товару" class="newItemInput" value="Помідори Печиво Сир">
             <button type="button" id="add-item" class="addItemButton tooltip" data-tooltip="Add Item to List">Додати
             </button>
-        </div>
-        <div class=otherLeftLines>
-            <span class="itemName">Помідори</span>
-            <input class="hidden-input" type="text">
-            <div class="itemAmountChange">
-                <button type="button" class="reduceItemAmountButton" data-tooltip="Reduce by 1" disabled>-
-                </button>
-                <span class="itemAmountCounter">1</span>
-                <button type="button" class="increaseItemAmountButton tooltip" data-tooltip="Increase by 1">+</button>
-            </div>
-            <div class="itemFinal">
-                <button type="button" class="boughtButton tooltip" data-tooltip="Mark item as bought">Куплено</button>
-                <button type="button" class="unbuy-button tooltip" data-tooltip="Mark item as NOT bought">Не куплено
-                </button>
-                <button type="button" class="removeButton tooltip" data-tooltip="Remove from List">X</button>
-            </div>
-        </div>
-        <div class="otherLeftLines">
-            <div class="itemName">Печиво</div>
-            <input class="hidden-input" type="text">
-            <div class="itemAmountChange">
-                <button type="button" class="reduceItemAmountButton" data-tooltip="Reduce by 1" disabled>-
-                </button>
-                <span class="itemAmountCounter">1</span>
-                <button type="button" class="increaseItemAmountButton tooltip" data-tooltip="Increase by 1">+</button>
-            </div>
-            <div class="itemFinal">
-                <button type="button" class="boughtButton tooltip" data-tooltip="Mark item as bought">Куплено</button>
-                <button type="button" class="unbuy-button tooltip" data-tooltip="Mark item as NOT bought">Не куплено
-                </button>
-                <button type="button" class="removeButton tooltip" data-tooltip="Remove from List">X</button>
-            </div>
-        </div>
-        <div class="otherLeftLines">
-            <div class="itemName">Сир</div>
-            <input class="hidden-input" type="text">
-            <div class="itemAmountChange">
-                <button type="button" class="reduceItemAmountButton" data-tooltip="Reduce by 1" disabled>-
-                </button>
-                <span class="itemAmountCounter">1</span>
-                <button type="button" class="increaseItemAmountButton tooltip" data-tooltip="Increase by 1">+</button>
-            </div>
-            <div class="itemFinal">
-                <button type="button" class="boughtButton tooltip" data-tooltip="Mark item as bought">Куплено</button>
-                <button type="button" class="unbuy-button tooltip" data-tooltip="Mark item as NOT bought">Не куплено
-                </button>
-                <button type="button" class="removeButton tooltip" data-tooltip="Remove from List">X</button>
-            </div>
         </div>
     </div>
 
@@ -69,24 +22,6 @@
     <div class="rightColumn">
         <h3>Залишилося</h3>
         <div class="rightColumnLine" id="to-buy-elements-line">
-            <div class="rightColumnElement">
-                <span class="rightColumnElementName">Помідори</span>
-                <span class="rightColumnElementAmount">
-                    1
-                </span>
-            </div>
-            <div class="rightColumnElement">
-                <span class="rightColumnElementName">Печиво</span>
-                <span class="rightColumnElementAmount">
-                    1
-                </span>
-            </div>
-            <div class="rightColumnElement">
-                <span class="rightColumnElementName">Сир</span>
-                <span class="rightColumnElementAmount">
-                    1
-                </span>
-            </div>
         </div>
         <div class="rightColumnLine">
             <h3>Куплено</h3>
@@ -134,7 +69,7 @@
 
 </div>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/main.js" charset="UTF-8"></script>
 </body>
 </html>
 

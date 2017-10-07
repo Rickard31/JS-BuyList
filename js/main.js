@@ -142,7 +142,6 @@ $(function () {
     function addItem(name) {
         var rowTemplate = $($("#row-template").html());
         rowTemplate.find(".itemName").text(name);
-        console.log(rowTemplate);
         $(".leftColumn").append(rowTemplate);
 
         rowTemplate.find(".itemName").click(function () {
@@ -255,5 +254,14 @@ $(function () {
         $("#to-buy-elements-line").append(elementTemplate);
         $("#new-item-name").prop('value', "");
     };
+
+    var names = $("#new-item-name").val().split(" ");
+    $("#new-item-name").prop('value', "");
+    for(var i = 0; i<names.length; i++){
+        addItem(names[i]);
+    }
+
 });
+
+
 
